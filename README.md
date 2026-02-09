@@ -8,8 +8,8 @@ Ember demonstrates core concepts from programming language theory: **lexical ana
 
 ```bash
 # Clone and install
-git clone https://github.com/<username>/ember.git
-cd ember
+git clone https://github.com/sonamjha12701/ember-interpreter.git
+cd ember-interpreter
 pip install -e .
 
 # Run the interactive REPL
