@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(pip install:*)",
+      "Bash(PYTHONPATH=/Users/rohanjha/projects/ball-knowledge python3 -m pytest:*)",
+      "Bash(PYTHONPATH=/Users/rohanjha/projects/ball-knowledge python3:*)"
+    ]
+  }
+}

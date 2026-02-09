@@ -1,0 +1,22 @@
+# Number guessing game — demonstrates I/O and control flow
+# Note: this example requires interactive input
+
+let secret = 42
+let guesses = 0
+let found = false
+
+print("I'm thinking of a number between 1 and 100!")
+
+while not found do
+    let guess = num(input("Your guess: "))
+    let guesses = guesses + 1
+
+    if guess == secret do
+        print("Correct! You got it in " + str(guesses) + " guesses!")
+        let found = true
+    elif guess < secret do
+        print("Too low! Try again.")
+    else do
+        print("Too high! Try again.")
+    end
+end

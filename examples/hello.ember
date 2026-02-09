@@ -1,0 +1,8 @@
+# Hello World — The simplest Ember program
+
+print("Hello, World!")
+print("Welcome to the Ember programming language!")
+
+let name = "Ember"
+let version = 1
+print(name + " v" + str(version) + " is running!")

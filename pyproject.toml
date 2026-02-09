@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ember-lang"
+version = "1.0.0"
+description = "A tree-walking interpreter for the Ember programming language"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+
+[project.scripts]
+ember = "ember.__main__:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

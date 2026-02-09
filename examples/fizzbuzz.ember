@@ -1,0 +1,19 @@
+# FizzBuzz — the classic programming challenge
+
+fn fizzbuzz(n) do
+    let i = 1
+    while i <= n do
+        if i % 15 == 0 do
+            print("FizzBuzz")
+        elif i % 3 == 0 do
+            print("Fizz")
+        elif i % 5 == 0 do
+            print("Buzz")
+        else do
+            print(i)
+        end
+        let i = i + 1
+    end
+end
+
+fizzbuzz(30)

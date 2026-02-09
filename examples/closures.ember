@@ -1,0 +1,30 @@
+# Closures and higher-order functions
+
+# A closure captures the environment where it was defined
+fn make_adder(x) do
+    fn adder(y) do
+        return x + y
+    end
+    return adder
+end
+
+let add5 = make_adder(5)
+let add10 = make_adder(10)
+
+print("add5(3) =", add5(3))
+print("add10(3) =", add10(3))
+
+# Counter using closure — demonstrates mutable state capture
+fn make_counter() do
+    let count = 0
+    fn next() do
+        let count = count + 1
+        return count
+    end
+    return next
+end
+
+let counter = make_counter()
+print("counter() =", counter())
+print("counter() =", counter())
+print("counter() =", counter())

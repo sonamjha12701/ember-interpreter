@@ -1,0 +1,15 @@
+# Fibonacci sequence — demonstrates recursion and functions
+
+fn fib(n) do
+    if n <= 1 do
+        return n
+    end
+    return fib(n - 1) + fib(n - 2)
+end
+
+# Print the first 15 Fibonacci numbers
+let i = 0
+while i < 15 do
+    print("fib(" + str(i) + ") =", fib(i))
+    let i = i + 1
+end
